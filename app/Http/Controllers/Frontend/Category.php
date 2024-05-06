@@ -8,6 +8,6 @@ use Illuminate\Http\Request;
 class Category extends Controller
 {
     public function category(){
-        return view('Frontend.category');
+        return view('pages.category.category');
     }
 }

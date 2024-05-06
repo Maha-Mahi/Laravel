@@ -5,27 +5,27 @@
         <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Bella Shop</title>
+        <title>My Shop</title>
 
         <!-- Favicon -->
-        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
-        <link rel="shortcut icon" href="assets/ico/favicon.ico">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{url('assets/ico/apple-touch-icon-144-precomposed.png')}}">
+        <link rel="shortcut icon" href="{{url('assets/ico/favicon.ico')}}">
 
         <!-- CSS Global -->
-        <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-        <link href="assets/plugins/bootstrap-select/css/bootstrap-select.min.css" rel="stylesheet">
-        <link href="assets/plugins/fontawesome/css/font-awesome.min.css" rel="stylesheet">
-        <link href="assets/plugins/prettyphoto/css/prettyPhoto.css" rel="stylesheet">
-        <link href="assets/plugins/owl-carousel2/assets/owl.carousel.min.css" rel="stylesheet">
-        <link href="assets/plugins/owl-carousel2/assets/owl.theme.default.min.css" rel="stylesheet">
-        <link href="assets/plugins/animate/animate.min.css" rel="stylesheet">
+        <link href="{{url('assets/plugins/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+        <link href="{{url('assets/plugins/bootstrap-select/css/bootstrap-select.min.css')}}" rel="stylesheet">
+        <link href="{{url('assets/plugins/fontawesome/css/font-awesome.min.css')}}" rel="stylesheet">
+        <link href="{{url('assets/plugins/prettyphoto/css/prettyPhoto.css')}}" rel="stylesheet">
+        <link href="{{url('assets/plugins/owl-carousel2/assets/owl.carousel.min.css')}}" rel="stylesheet">
+        <link href="{{url('assets/plugins/owl-carousel2/assets/owl.theme.default.min.css')}}" rel="stylesheet">
+        <link href="{{url('assets/plugins/animate/animate.min.css')}}" rel="stylesheet">
 
         <!-- Theme CSS -->
-        <link href="assets/css/theme.css" rel="stylesheet">
-        <link href="assets/css/theme-green-1.css" rel="stylesheet" id="theme-config-link">
+        <link href="{{url('assets/css/theme.css')}}" rel="stylesheet">
+        <link href="{{url('assets/css/theme-green-1.css')}}" rel="stylesheet" id="theme-config-link">
 
         <!-- Head Libs -->
-        <script src="assets/plugins/modernizr.custom.js"></script>
+        <script src="{{url('assets/plugins/modernizr.custom.js')}}"></script>
 
         <!--[if lt IE 9]>
         <script src="assets/plugins/iesupport/html5shiv.js"></script>
@@ -75,7 +75,7 @@
                                     <div class="media-body">
                                         <div>
                                             <a href="#" class="btn btn-theme btn-theme-dark" data-dismiss="modal">Close</a><!--
-                                            --><a href="shopping-cart.html" class="btn btn-theme btn-theme-transparent btn-call-checkout">Checkout</a>
+                                            --><a href="{{url('/checkout')}}" class="btn btn-theme btn-theme-transparent btn-call-checkout">Checkout</a>
                                         </div>
                                     </div>
                                 </div>
@@ -99,7 +99,7 @@
                     <div class="top-bar-right">
                         <ul class="list-inline">
                             <li class="hidden-xs"><a href="{{url('/about_us')}}">About</a></li>
-                            <li class="hidden-xs"><a href="{{url('')}}">Blog</a></li>
+                            <li class="hidden-xs"><a href="{{url('/blog')}}">Blog</a></li>
                             <li class="hidden-xs"><a href="{{url('')}}">My Account</a></li>
                             <li class="hidden-xs"><a href="{{url('/contact_us')}}">Contact</a></li>
                             <li class="hidden-xs"><a href="{{url('/wish_list')}}">My Wishlist</a></li>
@@ -137,7 +137,7 @@
                         <!-- Header shopping cart -->
                         <div class="header-cart">
                             <div class="cart-wrapper">
-                                <a href="wishlist.html" class="btn btn-theme-transparent hidden-xs hidden-sm"><i class="fa fa-heart"></i></a>
+                                <a href="{{url('/wish_list')}}" class="btn btn-theme-transparent hidden-xs hidden-sm"><i class="fa fa-heart"></i></a>
                                 <a href="compare-products.html" class="btn btn-theme-transparent hidden-xs hidden-sm"><i class="fa fa-exchange"></i></a>
                                 <a href="#" class="btn btn-theme-transparent" data-toggle="modal" data-target="#popup-cart"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs"> 0 item(s) - $0.00 </span> <i class="fa fa-angle-down"></i></a>
                                 <!-- Mobile menu toggle button -->
@@ -212,7 +212,7 @@
                                                     <li><a href="typography.html"><strong>Typography</strong></a></li>
                                                     <li><a href="coming-soon.html"><strong>Coming soon</strong></a></li>
                                                     <li><a href="error-page.html"><strong>404 Page</strong></a></li>
-                                                    <li><a href="about.html"><strong>About</strong></a></li>
+                                                    <li><a href="{{url('/about_us')}}"><strong>About</strong></a></li>
                                                     <li><a href="login.html"><strong>Login</strong></a></li>
                                                 </ul>
                                             </div>
@@ -223,7 +223,7 @@
                                                     <li><a href="myaccount.html">My Account</a></li>
                                                     <li><a href="cng-pw.html">Change Password</a></li>
                                                     <li><a href="address-book.html">Address Books</a></li>
-                                                    <li><a href="order-history.html">Order History</a></li>
+                                                    <li><a href="{{url('/order_history')}}">Order History</a></li>
                                                     <li><a href="review-rating.html">Reviews and Ratings</a></li>
                                                     <li><a href="return.html">Returns Requests</a></li>
                                                     <li><a href="newsletter.html">Newsletter</a></li>
@@ -281,12 +281,12 @@
                                         </li>
                                     </ul>
                                 </li>
-                                <li><a href="category.html">Men</a></li>
-                                <li><a href="category.html">Women</a></li>
-                                <li><a href="category.html">Kids</a></li>
-                                <li><a href="category.html">New</a></li>
-                                <li class="sale"><a href="category.html">Sale</a></li>
-                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="{{url('/category')}}">Men</a></li>
+                                <li><a href="{{url('/category')}}">Women</a></li>
+                                <li><a href="{{url('/category')}}">Kids</a></li>
+                                <li><a href="{{url('/category')}}">New</a></li>
+                                <li class="sale"><a href="{{url('/category')}}">Sale</a></li>
+                                <li><a href="{{url('/contact_us')}}">Contact</a></li>
                             </ul>
                         </nav>
                         <!-- /Navigation -->

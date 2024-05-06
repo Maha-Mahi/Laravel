@@ -4,7 +4,7 @@
         <div class="container">
             <div class="row">
 
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <div class="widget">
                         <h4 class="widget-title">About Us</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sollicitudin ultrices suscipit. Sed commodo vel mauris vel dapibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -16,7 +16,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-3">
+               <!-- <div class="col-md-3">
                     <div class="widget">
                         <h4 class="widget-title">News Letter</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -29,20 +29,20 @@
                             </div>
                         </form>
                     </div>
-                </div>
-                <div class="col-md-3">
+                </div>-->
+                <div class="col-md-4">
                     <div class="widget widget-categories">
                         <h4 class="widget-title">Information</h4>
                         <ul>
-                            <li><a href="#">About Us</a></li>
+                            <li><a href="{{url('/about_us')}}">About Us</a></li>
                             <li><a href="#">Delivery Information</a></li>
-                            <li><a href="#">Contact Us</a></li>
-                            <li><a href="#">Terms and Conditions</a></li>
-                            <li><a href="#">Private Policy</a></li>
+                            <li><a href="{{url('/contact_us')}}">Contact Us</a></li>
+                            <li><a href="{{url('/terms')}}">Terms and Conditions</a></li>
+                            <li><a href="{{url('/privacy-policy')}}">Private Policy</a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <div class="widget widget-tag-cloud">
                         <h4 class="widget-title">Item Tags</h4>
                         <ul>

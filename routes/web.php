@@ -8,6 +8,8 @@ use App\Http\Controllers\Frontend\ContactUs;
 use App\Http\Controllers\Frontend\OrderHistory;
 use App\Http\Controllers\Frontend\ProductDetails;
 use App\Http\Controllers\Frontend\WishList;
+use App\Http\Controllers\Frontend\checkout;
+
 
 
 
@@ -19,3 +21,4 @@ Route::get('/contact_us',[ContactUs::class, 'contact']);
 Route::get('/order_history',[OrderHistory::class, 'orderhistory']);
 Route::get('/product_details',[ProductDetails::class, 'proddetails']);
 Route::get('/wish_list',[WishList::class, 'wishlist']);
+Route::get('/checkout',[checkout::class, 'index']);

@@ -8,6 +8,6 @@ use Illuminate\Http\Request;
 class WishList extends Controller
 {
     public function wishlist(){
-        return view('Frontend.wishlist');
+        return view('pages.wishlist.wishlist');
     }
 }

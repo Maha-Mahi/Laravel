@@ -8,6 +8,6 @@ use Illuminate\Http\Request;
 class OrderHistory extends Controller
 {
     public function orderhistory(){
-        return view('Frontend.order-history');
+        return view('pages.orderhistory.order-history');
     }
 }
